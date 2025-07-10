@@ -1,47 +1,45 @@
-<footer id="form-newsletter">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="{{ '/assets/img/logoNB.png' | relative_url }}" style="width: 100%; height: 100%; object-fit: contain" alt="logo veranda">
-				<p><a href="{{ site.baseurl }}/permis-construire-veranda">Permis de construire de véranda</a></p>
-				<p><a href="{{ site.baseurl }}/isoler-veranda">Isoler véranda</a></p>
-				<p><a href="{{ site.baseurl }}/declaration-veranda-impot">Déclaration véranda impôt</a></p>
-				<p><a href="{{ site.baseurl }}/veranda-sur-escalier-exterieur">Véranda sur escalier extérieur</a></p>
-				<p><a href="{{ site.baseurl }}/pergola-77">Pergola 77</a></p>
-				<p><a href="{{ site.baseurl }}/chauffer-veranda">Chauffer véranda</a></p>
-			</div>
-			<div class="col-sm-4">
-				<a class="link-coordinates" href="https://maps.app.goo.gl/8bpmFgyXFfuPSs1TA" target="_blank">
-					<p class="title">Nos coordonnées</p>
-				</a>
-				<p>
-					Tel.
-					<a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a>
-				</p>
-				<p>
-					Email.
-					<a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
-				</p>
-				<p>
-					Adresse
-					<a href="https://maps.app.goo.gl/8bpmFgyXFfuPSs1TA" target="_blank">
-						<span class="address">
-						2, rue du Camp Romain
-						91490, Milly La Forêt
-						</span>
-					</a>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<p class="title">Inscrivez-vous à notre Newsletter</p>
-				{% include newsletter.html %}
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center"><a href="{{ site.baseurl }}/legales-mentions">Mentions légales</a></p>
-				<p class="text-center"><a href="{{ site.baseurl }}/politique-de-confidentialite">Politique de confidentialité</a></p>
-			</div>
-		</div>
-	</div>
+<footer>
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-6 text-left">
+            <h2>SIGET</h2>
+            <p>Siget est une entreprise de plombiers chauffagistes. Notre entreprise a plus de 10 années d’expérience dans le domaine, et certains de nos collaborateurs sont en activité depuis au moins 20 ans dans la région. Le spécialiste Plombier Chauffagiste Siget vous propose des prestations fiables, avec les meilleures compétences et une satisfaction assurée.</p>
+
+            <p>Contactez-nous pour l’installation, l’entretien ou les réparations de tous vos besoins en plomberie ou chauffage. Nous intervenons autour de Bures-sur-Yvette dans l’Essonne.</p>
+         
+            <br>
+            <ul class="social">
+               <li><a href="{{ site.data.company.facebook }}" target="_blank"><span class="fa fa-facebook fa-fw"></span></a></li>
+            </ul>
+            <br>
+         </div>
+         <div class="col-sm-6 text-left">
+            <h2>Liens utiles</h2>
+            <ul class="list2">
+               <li><a class="{% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">Accueil</a> </li>
+               <li><a class="{% if page.url == '/notre-entreprise/' %}active{% endif %}" href="{{ site.baseurl }}/notre-entreprise/">Présentation</a></li>
+               <li><a class="{% if page.url == '/nos-verandas/' %}active{% endif %}" href="{{ site.baseurl }}/nos-verandas/">Nos vérandas</a></li>
+               <li><a class="{% if page.url == '/nos-realisations/' %}active{% endif %}" href="{{ site.baseurl }}/nos-realisations/">Nos réalisations</a></li>
+               <li><a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ site.baseurl }}/contact/">Contact</a></li>
+               <li><a class="{% if page.url == '/devis/' %}active{% endif %}" href="{{ site.baseurl }}/devis/">Devis en ligne</a></li>
+               <li><a class="{% if page.url == '/zone' %}active{% endif %}" href="{{ site.baseurl }}/zone">Zones d'intervention</a></li>
+               <li><a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ site.baseurl }}/contact/">Contact</a></li>
+               <li><a class="{% if page.url == '/devis/' %}active{% endif %}" href="{{ site.baseurl }}/devis/">Devis en ligne</a></li>
+
+               <li><a class="{% if page.url == '/pompe-a-chaleur-91/' %}active{% endif %}" href="{{ site.baseurl }}/pompe-a-chaleur-91/">Pompe à chaleur 91</a></li>
+
+               <li><a class="{% if page.url == '/plombier-91/' %}active{% endif %}" href="{{ site.baseurl }}/plombier-91/">Plombier 91</a></li>
+
+               <li><a class="{% if page.url == '/chauffagiste-91/' %}active{% endif %}" href="{{ site.baseurl }}/chauffagiste-91/">Chauffagiste 91</a></li>
+
+               <li><a class="{% if page.url == '/pression-eau-chaude-froide/' %}active{% endif %}" href="{{ site.baseurl }}/pression-eau-chaude-froide/">Pression eau chaude froide</a></li>
+
+               </ul>
+         </div>
+      </div>
+   </div>
+   <div class="text-center" id="bhinternet">
+      <a href="https://www.bhinternet.fr/" target="_blank">BHInternet - Création site internet | {{ 'now' | date: '%Y' }} | </a>
+      <a href="{{ site.baseurl }}/legales-mentions/">Mentions légales</a>
+   </div>
 </footer>
