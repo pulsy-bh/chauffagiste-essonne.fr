@@ -18,7 +18,7 @@ description: "Sans entretien régulier de votre chaudière, il est possible que 
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <img src="img/depannage1.jpg" alt="Installation climatiseur" class="img-responsive">
+          <img src="{{'/assets/img/depannage1.jpg' | relative_url}}" alt="Installation climatiseur" class="img-responsive">
         </div>
         <div class="col-sm-6">
           <h2>DÉPANNAGE CHAUDIÈRE,<br>CONTACTEZ NOUS POUR UN DEVIS</h2>
@@ -82,11 +82,11 @@ description: "Sans entretien régulier de votre chaudière, il est possible que 
         </div>
         <div class="col-sm-5 col-md-4 text-left">
           <div class="card">
-            <img src="img/icon/devis5.png" alt="devis" class="img-responsive">
+            <img src="{{'/assets/img/icon/devis5.png' | relative_url}}" alt="devis" class="img-responsive">
             <br>
             <h3><strong>Contactez-nous maintenant !</strong></h3>
             <p class="text-left">Vous avez besoin d’une information sur le dépannage de votre chaudière ? Nous nous engageons à fournir la meilleure qualité de travail qui soit lors de nos interventions ! Avec EDC GAZ, vivez mieux !</p>
-            <a href="<?= $routes['devis']; ?>" class="button2">
+            <a href="{{ site.baseurl }}/devis/" class="button2">
               <span class="txt">Demandez un devis</span>
             </a>
           </div>
@@ -104,7 +104,7 @@ description: "Sans entretien régulier de votre chaudière, il est possible que 
           <p>Pour alléger votre facture énergétique, pensez toujours à contacter les chauffagistes de chez EDC GAZ ! Ils résoudront tous vos besoins en dépannage.</p>
         </div>
         <div class="col-sm-6">
-          <img src="img/depannage2.jpg" alt="dépannage chaudière" class="img-responsive">
+          <img src="{{'/assets/img/depannage2.jpg' | relative_url}}" alt="dépannage chaudière" class="img-responsive">
         </div>
       </div>
     </div>
