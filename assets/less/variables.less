@@ -25,6 +25,12 @@
 @color-pinterest : 		#c92027;
 @color-linkedin : 		#0976B4;
 
+@primaryColor:#562a83; //rouge
+@secondaryColor:#20b8cf; //noir
+@tertiaryColor:#562a83; //rouge
+@quaternaryColor:#562a83;// rouge
+@grey:#777777;
+@black:#2d2d43;
 
 //== Scaffolding
 //
@@ -44,12 +50,18 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+
+@secondaryFont:'Montserrat', sans-serif;
+@primaryFont:'Roboto', sans-serif;
 
 @font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px

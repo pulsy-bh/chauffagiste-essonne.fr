@@ -1,22 +1,22 @@
 ####################
 # CONFIG
 ####################
-conf_name: "siget.fr"
-conf_address: "4A rue du général leclerc"
-conf_zipCode: "91440"
-conf_city: "Bures sur Yvette"
+name: "siget.fr"
+address: "4A rue du général leclerc"
+zipCode: "91440"
+city: "Bures sur Yvette"
 conf_googleMap: "https://www.google.com/maps/place/42+Rue+Paul+Claudel,+91000+%C3%89vry,+France/@48.6376196,2.4291048,17z/data=!3m1!4b1!4m5!3m4!1s0x47e5de23ed21fdd1:0x568db99293527174!8m2!3d48.6376196!4d2.4312935"
 
-call_phone1: "0169071980"
-conf_phone1: "01 69 07 19 80"
+phone1: "0169071980"
+phone2: "01 69 07 19 80"
 
 # $conf_fax="01 00 00 00 00";
 
-conf_id_company: 430
-conf_name_website: "siget.fr"
-conf_addressOnline: "http://www.#{conf_name_website}/"
+id_company: 430
+name_website: "siget.fr"
+addressOnline: "http://www.#{name_website}/"
 # $conf_email         ="hoolan@bhgroupe.fr";
-conf_email: "siget@siget.fr"
+email: "siget@siget.fr"
 #Email envoyé en copie caché des formulaires
 # $conf_email_copie   = "hoolan@bhgroupe.fr";
 conf_email_copie: "hind@bhgroupe.fr"

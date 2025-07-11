@@ -6441,7 +6441,7 @@ header .phone-resp {
 
 header.slider {
     position: relative;
-    background-image: url(../../img/slider1.jpg);
+    background-image: url(../../assets/img/slider1.jpg);
     height: 750px;
     background-size: cover;
     background-position: center;
@@ -6625,7 +6625,7 @@ section.one h2 {
 }
 
 section.two {
-    background-image: url(../../img/slider3.jpg)
+    background-image: url(../../assets/img/slider3.jpg)
 }
 
 section.two h2 {
@@ -6661,7 +6661,7 @@ section.three p {
 }
 
 section.three {
-    background-image: url(../../img/slider2.jpg);
+    background-image: url(../../assets/img/slider2.jpg);
     position: relative
 }
 
@@ -7077,7 +7077,7 @@ footer h3 {
 .icon7,
 .icon8 {
     display: inline-block;
-    background: url(../../img/spriteacc.png) no-repeat;
+    background: url(../../assets/img/spriteacc.png) no-repeat;
     overflow: hidden;
     text-indent: -9999px;
     text-align: left
@@ -7148,12 +7148,12 @@ footer h3 {
 }
 
 .owl-carousel .prev-slide {
-    background: url(../../img/nav-icon.png) no-repeat scroll 0 0;
+    background: url(../../assets/img/nav-icon.png) no-repeat scroll 0 0;
     left: -33px
 }
 
 .owl-carousel .next-slide {
-    background: url(../../img/nav-icon.png) no-repeat scroll -24px 0;
+    background: url(../../assets/img/nav-icon.png) no-repeat scroll -24px 0;
     right: -33px
 }
 
@@ -7185,7 +7185,7 @@ footer h3 {
 }
 
 section.five {
-    background: url(../../img/slider-3.jpg) no-repeat;
+    background: url(../../assets/img/slider-3.jpg) no-repeat;
     background-size: cover;
     padding: 100px 0
 }

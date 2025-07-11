@@ -1,52 +1,138 @@
 ---
 layout: default
 permalink: /contact/
-title: "Contactez-nous pour avoir plus d'informations sur nos prestations"
-description: "Contactez-nous dès maintenant pour discuter de votre projet de véranda. Notre équipe est prête à vous accompagner et répondre à toutes vos questions !"
+title: "N'hésitez pas à nous contacter pour plus d'informations !"
+description: "Pour des renseignements supplémentaires, contactez-nous via notre formulaire gratuit en ligne. Notre
+équipe est à votre disposition pour vous aider 24h/7j."
 ---
 
-<section class="slider contact-header">
-	<div class="container">
-		<h1>Contactez-nous pour toutes informations complémentaires</h1>
-		<h2>Pour toutes informations complémentaires</h2>
-	</div>
-</section>
-<section class="infos-contact">
+<section class="mini-slider wow " data-wow-duration="1s" data-wow-delay="0">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
-				<h2>Email & Téléphone</h2>
-				<p>
-					<a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
-				</p>
-				<p>
-					<a href="tel:{{ site.data.company.phone1 }}">{{ site.data.company.phone1 }}</a>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<h2>Réseaux sociaux</h2>
-				<ul class="social">
-					<li>
-						<a href="#" class="fa fa-facebook"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-instagram"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-google-plus"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-youtube"></a>
-					</li>
-				</ul>
+			<div class="col-sm-12">
+				<h1>Notre formulaire de contact</h1>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="pre-contact">
+<section class="one">
 	<div class="container">
-		<h2 class="text-left">Contactez-nous </h2>
-		<p>Pour une demande d’information complémentaire ou une simple question, remplissez notre formulaire, un expert vous répondra dans les 48 heures ouvrées.</p>
-		{% include pre-contact.html %}
+		<div class="row">
+			<div class="col-sm-12">
+				<h2><strong>Contactez</strong> nous !</h2>
+				<h3>Remplissez notre formulaire en ligne</h3>
+				<div class="separator"></div>
+			</div>
+			<div class="col-sm-6">
+				<form id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
+					<input type="hidden" name="lang" value="fr" />
+					<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+					<input type="hidden" name="type" value="devis" />
+					<input type="hidden" name="website" value="{{ site.data.company.website }}" />
+					<input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+					<input type="hidden" name="firstName" value="" />
+					<input type="hidden" name="condition" value="on" />
+					<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
+					<div class="row form-contact">
+						<div class="col-sm-6">
+							<div class="form-group has-feedback">
+								<input required type="text" class="form-control " id="lastname" name="nom"
+									value="" placeholder="Nom">
+								
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group has-feedback">
+								<input required type="text" class="form-control " id="firstname" name="prenom"
+									value="" placeholder="Prénom">
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group has-feedback">
+								<input required type="text" class="form-control " id="phone" name="phone"
+									value="" placeholder="Téléphone">
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group has-feedback">
+								<input required type="text" class="form-control " id="email" name="email"
+									value="" placeholder="Email">
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+								<div class="form-group has-feedback">
+								<select name="subject" class="form-control" id="subject">
+									<option value="Demande d'information générale">Demande d'information générale</option>
+									<option value="Demande d'information tarifaire">Demande d'information tarifaire</option>
+									<option value="Proposition commerciale">Proposition commerciale</option>
+									<option value="Recrutement">Recrutement</option>
+									<option value="Autre">Autre</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group has-feedback">
+								<textarea required class="form-control" id="message" name="message" rows="6" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group has-feedback group-rgpd">
+								<div class="checkbox info-rgpd" style="margin-top: 0;">
+									<input type="checkbox" id="rgpd" name="rgpd" class="check-rgpd">
+									<label for="rgpd">En utilisant ce formulaire, vous acceptez le stockage et la gestion de vos données par ce site *</label>
+								</div>
+							</div>
+							<div class="form-group has-feedback pseudoForm">
+								<input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Pseudonyme">
+							</div>
+							<!-- <div class="col-md-3 col-sm-12 text-center">
+								<div id="contact-form-response"></div>
+								<div class="form-group d-flex justify-content-center">
+								<div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
+								</div>
+								<br />
+								<input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+								</div>
+							</div> -->
+							<div class="buttondevis text-center">
+								<button type="submit" name="contact" class="button2 btn-form">
+									<span class='txt'>Envoyer</span>
+								</button>
+							</div>
+							<div class="separator"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				{% include contact-info.html %}
+
+				<div class="benefits">
+					<span class="ico">
+						<img src="{{'/assets/img/icon/distance.jpg' | relative_url}}" alt="Picto distance">
+					</span>
+					<div class="texte">
+						<h3>INTERVENTIONS RAPIDES JUSQU'A 15KM AUTOUR DE BURES-SUR-YVETTE ET ANTONY</h3>
+						<p>En cas d’urgence, nous intervenons jusqu'à 15km autour de Bures-sur-Yvette et Antony pour
+							tout dépannage concernant vos problèmes de chauffage ou de plomberie...</p>
+
+					</div>
+
+				</div>
+
+				<div class="benefits">
+					<span class="ico">
+						<img src="{{'/assets/img/icon/7j.jpg' | relative_url}}" alt="Picto horaire">
+					</span>
+					<div class="texte">
+						<h3>VOUS POUVEZ NOUS CONTACTER EN URGENCE UN DIMANCHE OU UN JOUR FÉRIÉ</h3>
+						<p>Nous nous déplacerons rapidement dans un rayon de 15km autour de Bures-sur-Yvette et
+							d'Antony.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

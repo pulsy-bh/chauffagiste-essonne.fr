@@ -2,21 +2,29 @@
 layout: default
 permalink: /devis/
 title: "Notre formulaire de devis gratuit disponible en ligne"
-description: "Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit de remplir notre formulaire de devis en ligne !"
+description: "Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit
+de remplir notre formulaire de devis en ligne !"
 ---
 
-<section class="slider contact-header">
+<section class="mini-slider wow " data-wow-duration="1s" data-wow-delay="0">
 	<div class="container">
-		<h1>Devis</h1>
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Devis en ligne</h1>
+			</div>
+		</div>
 	</div>
 </section>
-
-<section class="devis">
-	<div id="devis">
-		<div class="container">
+<section class="one">
+	<div class="container">
+		<div id="devis" class="bgform">
 			<div class="row">
 				<div class="col-sm-12">
-					<form class="form-horizontal p20" id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
+					<h2>Demandez un <strong>devis</strong></h2>
+					<br><br>
+				</div>
+				<div class="col-sm-6">
+					<form id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
 						<input type="hidden" name="lang" value="fr" />
 						<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
 						<input type="hidden" name="type" value="devis" />
@@ -26,101 +34,126 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 						<input type="hidden" name="condition" value="on" />
 						<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
 						<div class="row">
-							<div class="col-sm-5">
-								<fieldset>
-									<legend>Coordonnées</legend>
-
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="form-group">
-												<label for="lastName">Prénom*</label>
-												<input required type="text" class="form-control form-control-80" id="lastName" name="lastName">
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="form-group">
-												<label for="name">Nom*</label>
-												<input required type="text" class="form-control" id="name" name="name">
-											</div>
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="firstname"
+												name="prenom" value="" placeholder="Prénom">
 										</div>
 									</div>
-
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<label for="address">Adresse</label>
-												<input type="text" class="form-control" id="address" name="address">
-											</div>
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="lastname" name="nom"
+												value="" placeholder="Nom">
 										</div>
 									</div>
-
-									<div class="row">
-										<div class="col-sm-5">
-											<div class="form-group">
-												<label for="zipCode">Code postal*</label>
-												<input required type="text" class="form-control form-control-80" id="zipCode" name="zipCode">
-											</div>
-										</div>
-										<div class="col-sm-7">
-											<div class="form-group">
-												<label for="city">Ville</label>
-												<input type="text" class="form-control" id="city" name="city">
-											</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="adress" name="adress"
+												value="" placeholder="Adresse">
 										</div>
 									</div>
-
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<label for="email">E-mail*</label>
-												<input required type="email" class="form-control" id="email" name="email" placeholder="Email">
-											</div>
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="zipcode"
+												name="zipcode" value="" placeholder="Code postal">
 										</div>
 									</div>
-
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<label for="telephone">Téléphone*</label>
-												<input required type="tel" class="form-control" id="telephone" name="telephone" placeholder="Téléphone">
-											</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="city" name="city"
+												value="" placeholder="Ville">
 										</div>
 									</div>
-								</fieldset>
-							</div>
-
-							<div class="col-sm-6 col-sm-offset-1">
-								<fieldset>
-									<legend>Demande</legend>
-									<div class="form-group">
-										<label for="surface">Surface approximative*</label>
-										<select required name="surface" class="form-control" id="surface">
-											<option value="">---</option>
-											<option value="Inférieur à 20m²">Inférieur à 20m²</option>
-											<option value="De 20 à 30m²">De 20 à 30m²</option>
-											<option value="Supérieur à 30m²">Supérieur à 30m²</option>
-										</select>
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="phone" name="phone"
+												value="" placeholder="Téléphone">
+										</div>
 									</div>
-								</fieldset>
-								<div class="form-group">
-									<label for="message">Message</label>
-									<textarea rows="14" name="message" class="form-control" id="message"></textarea>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<input required type="text" class="form-control " id="email" name="email"
+												value="" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group has-feedback">
+											<select name="subject" class="form-control" id="subject">
+												<option value="Service:">Service:</option>
+												<option value="Entretien / dépannage">Entretien / dépannage</option>
+												<option value="Remplacement de chaudières">Remplacement de chaudières
+												</option>
+												<option value="Installation chaudière">Installation chaudière</option>
+												<option value="Création de salles de bain">Création de salles de bain
+												</option>
+												<option value="Installation et entretien de pompes à chaleur">
+													Installation et entretien de pompes à chaleur</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group has-feedback">
+											<textarea rows="6" name="message"
+												placeholder="Informations complémentaires (facultatif)"
+												class="form-control" id="message"
+												placeholder="Informations complémentaires (facultatif)"></textarea>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12" style="padding-left: 20px;">
-							<div id="contact-form-response"></div>
-							<div class="form-group d-flex justify-content-center">
-							  <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
-							  </div>
-							  <br />
-							  <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+						<div class="form-group has-feedback group-rgpd">
+							<div class="checkbox info-rgpd">
+								<input type="checkbox" id="rgpd" name="rgpd" class="check-rgpd">
+								<label for="rgpd">J'accepte les conditions générales de vente</label>
 							</div>
-						  </div>
-						<div class="buttondevis text-center">
-							<button type="submit" class="button">Envoyer</button>
 						</div>
+						<div class="form-group has-feedback pseudoForm">
+							<input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Pseudonyme">
+						</div>
+						<div class="buttondevis text-center">
+							<button type="submit" name="devis" value="envoyer" class="button2 btn-form success">
+								<span class='txt'>Envoyer</span>
+							</button>
+						</div>
+						<div class="separator"></div>
 					</form>
+				</div>
+				<div class="col-sm-6">
+					{% include contact-info.html %}
+
+					<div class="benefits">
+						<span class="ico">
+							<img src="{{'/assets/img/icon/distance.jpg' | relative_url}}" alt="Picto distance">
+						</span>
+						<div class="texte">
+							<h3>INTERVENTIONS RAPIDES JUSQU'A 15KM AUTOUR DE BURES-SUR-YVETTE ET ANTONY</h3>
+							<p>En cas d’urgence, nous intervenons jusqu'à 15km autour de Bures-sur-Yvette et Antony pour
+								tout dépannage concernant vos problèmes de chauffage ou de plomberie...</p>
+						</div>
+					</div>
+
+					<div class="benefits">
+						<span class="ico">
+							<img src="{{'/assets/img/icon/7j.jpg' | relative_url}}" alt="ouvert 7j/7">
+						</span>
+						<div class="texte">
+							<h3>VOUS POUVEZ NOUS CONTACTER EN URGENCE UN DIMANCHE OU UN JOUR FÉRIÉ</h3>
+							<p>Nous nous déplacerons rapidement dans un rayon de 15km autour de Bures-sur-Yvette et
+								d'Antony.</p>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
