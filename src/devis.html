@@ -31,20 +31,19 @@ de remplir notre formulaire de devis en ligne !"
 						<input type="hidden" name="website" value="{{ site.data.company.website }}" />
 						<input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
 						<input type="hidden" name="firstName" value="" />
-						<input type="hidden" name="condition" value="on" />
 						<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="form-group has-feedback">
-											<input required type="text" class="form-control " id="firstname"
-												name="prenom" value="" placeholder="Prénom">
+											<input required type="text" class="form-control " id="lastname"
+												name="lastname" value="" placeholder="Prénom">
 										</div>
 									</div>
 									<div class="col-sm-6">
 										<div class="form-group has-feedback">
-											<input required type="text" class="form-control " id="lastname" name="nom"
+											<input required type="text" class="form-control " id="name" name="name"
 												value="" placeholder="Nom">
 										</div>
 									</div>
@@ -114,12 +113,19 @@ de remplir notre formulaire de devis en ligne !"
 						</div>
 						<div class="form-group has-feedback group-rgpd">
 							<div class="checkbox info-rgpd">
-								<input type="checkbox" id="rgpd" name="rgpd" class="check-rgpd">
-								<label for="rgpd">J'accepte les conditions générales de vente</label>
+								<input type="checkbox" id="condition" required name="condition" class="check-rgpd">
+								<label for="condition">En utilisant ce formulaire, vous acceptez le stockage et la gestion de vos données par ce site *</label>
 							</div>
 						</div>
-						<div class="form-group has-feedback pseudoForm">
-							<input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Pseudonyme">
+
+						<div class="col-sm-12 text-center">
+							<div id="devis-form-response"></div>
+							<div class="form-group d-flex justify-content-center">
+							<div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
+							</div>
+							<br />
+							<input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+							</div>
 						</div>
 						<div class="buttondevis text-center">
 							<button type="submit" name="devis" value="envoyer" class="button2 btn-form success">

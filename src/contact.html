@@ -27,23 +27,22 @@ description: "Pour des renseignements supplémentaires, contactez-nous via notre
 				<form id="contactForm" method="post" action="{{ site.data.company.url.notify }}">
 					<input type="hidden" name="lang" value="fr" />
 					<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
-					<input type="hidden" name="type" value="devis" />
+					<input type="hidden" name="type" value="contact" />
 					<input type="hidden" name="website" value="{{ site.data.company.website }}" />
 					<input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
 					<input type="hidden" name="firstName" value="" />
-					<input type="hidden" name="condition" value="on" />
 					<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
 					<div class="row form-contact">
 						<div class="col-sm-6">
 							<div class="form-group has-feedback">
-								<input required type="text" class="form-control " id="lastname" name="nom"
+								<input required type="text" class="form-control " id="name" name="name"
 									value="" placeholder="Nom">
 								
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group has-feedback">
-								<input required type="text" class="form-control " id="firstname" name="prenom"
+								<input required type="text" class="form-control " id="lastname" name="lastname"
 									value="" placeholder="Prénom">
 							</div>
 						</div>
@@ -73,20 +72,17 @@ description: "Pour des renseignements supplémentaires, contactez-nous via notre
 						</div>
 						<div class="col-sm-12">
 							<div class="form-group has-feedback">
-								<textarea required class="form-control" id="message" name="message" rows="6" placeholder="Message"></textarea>
+								<textarea class="form-control" id="message" name="message" rows="6" placeholder="Message"></textarea>
 							</div>
 						</div>
 						<div class="col-sm-12">
 							<div class="form-group has-feedback group-rgpd">
 								<div class="checkbox info-rgpd" style="margin-top: 0;">
-									<input type="checkbox" id="rgpd" name="rgpd" class="check-rgpd">
-									<label for="rgpd">En utilisant ce formulaire, vous acceptez le stockage et la gestion de vos données par ce site *</label>
+									<input type="checkbox" id="condition" name="condition" class="check-rgpd" required>
+									<label for="condition">En utilisant ce formulaire, vous acceptez le stockage et la gestion de vos données par ce site *</label>
 								</div>
 							</div>
-							<div class="form-group has-feedback pseudoForm">
-								<input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Pseudonyme">
-							</div>
-							<!-- <div class="col-md-3 col-sm-12 text-center">
+							<div class="col-sm-12 text-center">
 								<div id="contact-form-response"></div>
 								<div class="form-group d-flex justify-content-center">
 								<div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
@@ -94,7 +90,7 @@ description: "Pour des renseignements supplémentaires, contactez-nous via notre
 								<br />
 								<input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
 								</div>
-							</div> -->
+							</div>
 							<div class="buttondevis text-center">
 								<button type="submit" name="contact" class="button2 btn-form">
 									<span class='txt'>Envoyer</span>
