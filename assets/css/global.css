@@ -7279,3 +7279,9 @@ section.five {
 body{
     /* overflow-x: hidden; */
 }
+
+@media screen and (max-width:768px) {
+    .mb-5 {
+        margin-bottom: 25px !important;
+    }
+}

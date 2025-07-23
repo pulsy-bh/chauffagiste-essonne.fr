@@ -5095,6 +5095,10 @@ section.one.cta-devis .card {
     section.one.cta-devis .card {
         margin-top: -150px
     }
+
+    .mb-5 {
+        margin-bottom: 50px !important;
+    }
 }
 
 section.one.cta-devis .card p {
