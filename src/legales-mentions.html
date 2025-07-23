@@ -19,19 +19,19 @@ pour plus d'informations sur nos prestations."
     <div class='container'>
         <div id="mentions-legales">
             <p>Ces informations concernent explicitement le site Internet <b>
-                    <?= $conf_name_website ?>
+                    {{ site.data.company.conf_name }}
                 </b>.</p>
             <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Propriétaire</h3>
                 </div>
                 <div class="panel-body">
-                    <h2>{{ site.data.company.owner }}</h2>
-                    <p>Société à responsabilité limitée au capital de {{ site.data.company.capital }} €,<br>
-                        Dont le siège social est établi {{ site.data.company.headOffice }}<br>
-                        Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS {{ site.data.company.rcs
+                    <h2>{{ site.data.company.conf_owner }}</h2>
+                    <p>Société à responsabilité limitée au capital de {{ site.data.company.conf_capital }} €,<br>
+                        Dont le siège social est établi {{ site.data.company.conf_headOffice }}<br>
+                        Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS {{ site.data.company.conf_rcs
                         }}<br>
-                        Directeur de la publication {{ site.data.company.comDirector }}</p>
+                        Directeur de la publication {{ site.data.company.conf_comDirector }}</p>
                 </div>
             </div>
             <br>

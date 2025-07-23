@@ -25,13 +25,14 @@ conf_email_copie: "hind@bhgroupe.fr"
 conf_email_formulaire1: conf_email
 
 # Mentions Légales
-conf_owner: conf_name
+conf_owner: "siget.fr"
 conf_capital: "20000"
-conf_headOffice: "#{conf_address} #{conf_zipCode} #{conf_city}"
+conf_headOffice: "4A rue du général leclerc 91440 Bures sur Yvette"
 conf_rcs: "Paris B 123 456 789"
 conf_hebergement: gandi
 gandi: "<h2>Gandi</h2><p>Société par actions simplifiée au capital 300 000 €,<br>Dont le siège social est établi 63 Boulevard Massena 75013 Paris<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Paris B 423 093 459</p>"
 hebergement: $gandi
+conf_comDirector: "Prénom NOM"
 
 website: 290
 # conf_hebergement: ovh
