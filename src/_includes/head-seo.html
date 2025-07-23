@@ -4,14 +4,14 @@
 <meta name="description" content="{{ page.description }}" />
 <meta property="og:description" content="{{ page.description }}" />
 <meta name="keywords" content="{{ page.keywords }}" />
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}" />
 <meta property="og:site_name" content="{{ site.data.company.name }}" />
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
 "@type":"WebSite",
-"url":"{{ site.url }}{{ page.url }}",
+"url":"{{ site.baseurl }}{{ page.url }}",
 "description":"{{ page.description }}",
 "name":"{{ page.title }}"
 }
